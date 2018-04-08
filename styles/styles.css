@@ -1,0 +1,20 @@
+/* css style sheet for Aloha Apparel Co. */
+/*GENERAL STYLES*/
+body{
+  font-size: 16px; /*mobile: 14px;*/
+  font-family: "Raleway Light", sans-serif;
+  color: #2d2d2d;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Playfair Display",sans-serif;
+}
+
+/*COLORS
+ HEX code for the light grey text colour is #969696
+The HEX code for orange brand colour is #e2574c (used for links, some headings, and buttons)
+The HEX code for the link hover state colour is #b64036
+The HEX code for the light grey border colour is #d7d7d7
+The HEX code for the dark grey background colour is the footer is #242424*/
+/* SIZE
+desktop-friendly content area is 1240px
+tablet-friendly content area is 600px
