@@ -12,8 +12,9 @@
   <!--- HEADER: logo | menu navigation | shopping cart-->
 <header>
   <nav class="fullNav">
-    <img src="images/aloha-logo.svg" alt="" id="logo">
-        <nav class="menuwrapper">
+    <!--- check what is better a class logo or img id logo--->
+    <a class="logo" title="Aloha Apparel Co." href="http://alohaapparel.dev"><img src="images/aloha-logo.svg" alt=""></a>
+        <nav class="menuwrapper" role="navigation">
             <ul>
               <li class="menu_item"><a href="#">About</a></li>
               <li class="menu_item"><a href="#">Shop</a></li>
@@ -30,15 +31,29 @@
     <h2>New collection</h2>
     <h1>Spring / Summer 2016</h1>
     </div>
-  <!--<img src="images/banner-girl.png" alt="" id="middle_photo">-->
+  <!--first I used img tag in thml, but it actually works better with tw images in css background<img src="images/banner-girl.png" alt="" id="middle_photo">-->
 </section>
 <section id="motto">
   <h3>Hand-Crafted <span id="motto-title">Styles</span></h3>
   <p>Aloha Apparel Co. sells only the finest ready-to-trvel clothing. Bowse our current selection of products or signup for updates below.</p>
-</section>
+</section><!-------end of MOTTO-->
+<!-- FEATURED, gallery section--->
 <section id="featured"></section>
+<!--- SLIDER, product section-->
 <section id="slider"></section>
-<section id="newsletter"></section>
+<!------------NEWSLETTER section---------->
+<section id="newsletter">
+  <div class="subscription">
+    <h3>Sign-up for<span> Updates</span></h3>
+    <p>Stay pdated on our latest product releases, be first to fins out avout upcomig sales, ane get free style tips from our blog. Unsubscribe at any time.</p>
+    <form class="" action="index.html" method="post"><!--how can I put link in action to lead to actual newsletter software?-->
+      <input type="email" name="mail-address" placeholder="Your email">
+      <!---should I use the input instead of button? <input type="submit" name="submit" value="subscribe"> the doc says contro over design is smaller than with buttons-->
+      <button type="submit" name="submit" id="subscribe_button">subscribe</button>
+    </form>
+  </div>
+</section><!--------end of NEWSLETTER-->
+<!---------FOOTER-->
 <footer>
   <div class="contact">
     <p>copyrigth 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
