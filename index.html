@@ -2,33 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style/normalize.css">
+  <!--<link rel="stylesheet" href="style/normalize.css">--->
   <link rel="stylesheet" href="styles/styles.css">
   <title>Aloha Apparel Co.</title>
 </head>
 <body>
   <!--- HEADER: logo | menu navigation | shopping cart-->
 <header>
-  <img src="images/aloha-logo.svg" alt="">
-  <nav>
-    <ul>
-      <li class="navitem">About</li>
-      <li class="navitem">Shop</li>
-      <li class="navitem">Featured</li>
-      <li class="navitem">Updates</li>
-    </ul>
-    <img src="images/cart-icon.svg" alt="">
+  <nav class="fullNav">
+    <img src="images/aloha-logo.svg" alt="" id="logo">
+        <nav class="menuwrapper">
+            <ul>
+              <li class="menu_item"><a href="#">About</a></li>
+              <li class="menu_item"><a href="#">Shop</a></li>
+              <li class="menu_item"><a href="#">Featured</a></li>
+              <li class="menu_item"><a href="#">Updates</a></li>
+            </ul>
+        </nav>
+      <img src="images/cart-icon.svg" alt="" id="shopping_icon">
   </nav>
 </header>
 <!--MAIN FOTO--->
 <section id="intro">
-  <img src="images/banner-girl.png" alt="">
-  <h2>New collection</h2>
-  <h1>Spring / Summer 2016</h1>
+  <div class="text-wrapp">
+    <h2>New collection</h2>
+    <h1>Spring / Summer 2016</h1>
+    </div>
+  <!--<img src="images/banner-girl.png" alt="" id="middle_photo">-->
 </section>
-<section id="motto"></section>
+<section id="motto">
+  <h3>Hand-Crafted <span id="motto-title">Styles</span></h3>
+  <p>Aloha Apparel Co. sells only the finest ready-to-trvel clothing. Bowse our current selection of products or signup for updates below.</p>
+</section>
 <section id="featured"></section>
 <section id="slider"></section>
 <section id="newsletter"></section>
@@ -38,7 +45,7 @@
     <p>604-604-6040. info@alohaapparel.com</p>
     <p class="address">1490 W Broadway <br> Vancouver, BC, Canada</p>
   </div>
-  <ul>
+  <ul class="social-menu">
     <li class="social">Facebook</li>
     <li class="social">Twitter</li>
     <li class="social">Instagram</li>
