@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--<link rel="stylesheet" href="style/normalize.css">--->
   <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <title>Aloha Apparel Co.</title>
 </head>
 <body>
   <!--- HEADER: logo | menu navigation | shopping cart-->
 <header>
-  <nav class="fullNav">
+  <div class="fullNav">
     <!--- check what is better a class logo or img id logo--->
     <a class="logo" title="Aloha Apparel Co." href="http://alohaapparel.dev"><img src="images/aloha-logo.svg" alt=""></a>
         <nav class="menuwrapper" role="navigation">
@@ -23,11 +24,11 @@
             </ul>
         </nav>
       <img src="images/cart-icon.svg" alt="" id="shopping_icon">
-  </nav>
+    </div>
 </header>
 <!--MAIN FOTO--->
 <section id="intro">
-  <div class="text-wrapp">
+  <div class="text-wrapp"><!--check if text can be wrapped into span with two fonts and br-->
     <h2>New collection</h2>
     <h1>Spring / Summer 2016</h1>
     </div>
@@ -38,14 +39,25 @@
   <p>Aloha Apparel Co. sells only the finest ready-to-trvel clothing. Bowse our current selection of products or signup for updates below.</p>
 </section><!-------end of MOTTO-->
 <!-- FEATURED, gallery section--->
-<section id="featured"></section>
+<section id="featured">
+  <div class="grid-container">
+    <div class="griditem"><p>Men's</p></div>
+    <div class="griditem"><p>Trends</p></div>
+    <div class="griditem"><p>Glasses</p></div>
+    <div class="griditem"><p>Sale</p></div>
+    <div class="griditem"><p>Bags</p></div>
+    <div class="griditem"><p>Women's</p>
+    </div><!--adding hover status to category name women-->
+  </div>
+</section>
+
 <!--- SLIDER, product section-->
 <section id="slider"></section>
 <!------------NEWSLETTER section---------->
 <section id="newsletter">
   <div class="subscription">
     <h3>Sign-up for<span> Updates</span></h3>
-    <p>Stay pdated on our latest product releases, be first to fins out avout upcomig sales, ane get free style tips from our blog. Unsubscribe at any time.</p>
+    <p>Stay udated on our latest product releases, be first to fins out about upcomig sales, ane get free style tips from our blog. Unsubscribe at any time.</p>
     <form class="" action="index.html" method="post"><!--how can I put link in action to lead to actual newsletter software?-->
       <input type="email" name="mail-address" placeholder="Your email">
       <!---should I use the input instead of button? <input type="submit" name="submit" value="subscribe"> the doc says contro over design is smaller than with buttons-->
@@ -61,11 +73,11 @@
     <p class="address">1490 W Broadway <br> Vancouver, BC, Canada</p>
   </div>
   <ul class="social-menu">
-    <li class="social">Facebook</li>
-    <li class="social">Twitter</li>
-    <li class="social">Instagram</li>
-    <li class="social">Pinterest</li>
-    <li class="social">Google+</li>
+    <li class="social"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+    <li class="social"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+    <li class="social"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+    <li class="social"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+    <li class="social"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> Google+</a></li>
   </ul>
 </footer>
 </body>

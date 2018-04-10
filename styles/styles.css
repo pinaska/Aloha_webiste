@@ -24,11 +24,10 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-family: "Playfair Display",sans-serif;
 }
-/*FONTS----------*/
+/*FONTS---------- needs to work on this later*/
 @font-face {
     font-family: "Playfair Display";
-    src: url("../fonts/playfairdisplay-bold.eot"),
-         url("../fonts/playfairdisplay-bold.woff2") format("woff2"),
+    src: url("/fonts/playfairdisplay-bold.eot"); src: url("/fonts/playfairdisplay-bold.woff2") format("woff2"),
          url("../fonts/playfairdisplay-bold.ttf") format("truetype"),
          url("../fonts/playfairdisplay-bold.svg") format("svg");
     font-weight: bold;
@@ -141,8 +140,8 @@ ul {
    margin: 3em;
  }
  /*is this semantically ok? for logo I used nav a img, for cart icon I used id. Mhhhhh????*/
- nav a img{
-   width: 300px;
+ .fullNav a img{
+   width: 250px;
  }
 
 #shopping_icon{
@@ -159,7 +158,7 @@ ul {
   background-size: contain, cover;/*cover really looks bad, very ugly*/
   background-position: center 200px, center center;
   /*girl is moving yay!!!!
-  background-attachment: fixed, scroll; */
+  background-attachment: fixed, scroll*/
 }
 /*distance from top and bottom: 450px*/
 .text-wrapp{
@@ -189,6 +188,49 @@ h2{
 /* need to figure out how to style this class here .text-wrapp{
   padding: 125px 0px;
 }*/
+/*FEATURED GALLERY--------------*/
+.grid-container{
+  display:flex;
+  align-content: space-around;
+  /*grid-gap: 10px;
+  grid-template-columns: auto auto auto;*/
+}
+/*using flexbox to see if it gets easier to position a text*/
+.griditem p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:200px;
+  height: 200px;
+  padding: 0 5px;
+  text-transform: uppercase;
+  color: #ffff;
+
+}
+.griditem{
+background-size: cover;
+background-repeat: no-repeat;
+margin: 5px;
+}
+
+.griditem:first-of-type{
+  background-image: url(../images/mens-category.jpg);
+}
+.griditem:nth-of-type(2) {
+  background-image: url(../images/trends-category.jpg);
+}
+.griditem:nth-of-type(3) {
+  background-image: url(../images/glasses-category.jpg);
+}
+.griditem:nth-of-type(4) {
+  background-image: url(../images/sale-category.jpg);
+}
+.griditem:nth-of-type(5) {
+  background-image: url(../images/bags-category.jpg);
+}
+.griditem:last-of-type {
+  background-image: url(../images/womens-category.jpg);
+}
 
 /*FOOTER-------------------------*/
 footer{
@@ -206,6 +248,17 @@ p.address{
 }
 .social-menu{
   display: block;
+}
+.social a{
+  color: #ffff;
+  text-transform: capitalize;
+
+}
+.social-menu {
+  text-align: left;
+}
+footer p{
+  padding: 10px 0;
 }
 /*NEWSLETTER------*/
 #newsletter{
