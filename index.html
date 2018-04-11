@@ -7,14 +7,37 @@
   <!--<link rel="stylesheet" href="style/normalize.css">--->
   <link rel="stylesheet" href="styles/styles.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--adding jquery to make a sticky menu-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>$(document).ready(function() {
+  var stickyNavTop = $('.fullNav').offset().top;
+
+  var stickyNav = function(){
+  var scrollTop = $(window).scrollTop();
+
+  if (scrollTop > stickyNavTop) {
+  $('.fullNav').addClass('sticky');
+  } else {
+  $('.fullNav').removeClass('sticky');
+  }
+  };
+  stickyNav();
+
+  $(window).scroll(function() {
+  stickyNav();
+  });
+  });
+</script>--->
   <title>Aloha Apparel Co.</title>
+  <meta name="description" content="A most excellent website about appareal">
+<meta name="author" content="Aloha Appareal Co.">
 </head>
 <body>
   <!--- HEADER: logo | menu navigation | shopping cart-->
 <header>
   <div class="fullNav">
     <!--- check what is better a class logo or img id logo--->
-    <a class="logo" title="Aloha Apparel Co." href="http://alohaapparel.dev"><img src="images/aloha-logo.svg" alt=""></a>
+    <a class="logo" title="Aloha Apparel Co." href="http://alohaapparel.dev"><img src="images/aloha-logo.svg" alt="aloha-name-black-letters"></a>
         <nav class="menuwrapper" role="navigation">
             <ul>
               <li class="menu_item"><a href="#">About</a></li>
@@ -23,7 +46,7 @@
               <li class="menu_item"><a href="#">Updates</a></li>
             </ul>
         </nav>
-      <img src="images/cart-icon.svg" alt="" id="shopping_icon">
+      <img src="images/cart-icon.svg" alt="online-shopping-cart-icon-black" id="shopping_icon">
     </div>
 </header>
 <!--MAIN FOTO--->
@@ -35,9 +58,9 @@
   <!--first I used img tag in thml, but it actually works better with tw images in css background<img src="images/banner-girl.png" alt="" id="middle_photo">-->
 </section>
 <section id="motto">
-  <h3>Hand-Crafted <span id="motto-title">Styles</span></h3>
+  <h3>Hand-Crafted <span>Styles</span></h3>
   <p>Aloha Apparel Co. sells only the finest ready-to-trvel clothing. Bowse our current selection of products or signup for updates below.</p>
-</section><!-------end of MOTTO-->
+</section><!---end of MOTTO-->
 <!-- FEATURED, gallery section--->
 <section id="featured">
   <div class="grid-container">
@@ -46,14 +69,13 @@
     <div class="griditem"><p>Glasses</p></div>
     <div class="griditem"><p>Sale</p></div>
     <div class="griditem"><p>Bags</p></div>
-    <div class="griditem"><p>Women's</p>
-    </div><!--adding hover status to category name women-->
+    <div class="griditem"><p>Women's</p></div><!--adding hover status to category name women-->
   </div>
 </section>
 
-<!--- SLIDER, product section-->
+<!--- SLIDER, product section , here will be jquery carousel plugin-- >
 <section id="slider"></section>
-<!------------NEWSLETTER section---------->
+<!---NEWSLETTER section---------->
 <section id="newsletter">
   <div class="subscription">
     <h3>Sign-up for<span> Updates</span></h3>
@@ -64,7 +86,7 @@
       <button type="submit" name="submit" id="subscribe_button">subscribe</button>
     </form>
   </div>
-</section><!--------end of NEWSLETTER-->
+</section><!---end of NEWSLETTER-->
 <!---------FOOTER-->
 <footer>
   <div class="contact">

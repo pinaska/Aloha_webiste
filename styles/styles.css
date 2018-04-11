@@ -191,6 +191,7 @@ h2{
 /*FEATURED GALLERY--------------*/
 .grid-container{
   display:flex;
+  flex-wrap: wrap;
   align-content: space-around;
   /*grid-gap: 10px;
   grid-template-columns: auto auto auto;*/
@@ -200,9 +201,8 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  width:200px;
-  height: 200px;
   padding: 0 5px;
+  font-size: 3.625em;
   text-transform: uppercase;
   color: #ffff;
 
@@ -211,6 +211,7 @@ h2{
 background-size: cover;
 background-repeat: no-repeat;
 margin: 5px;
+flex: 1 1 auto;
 }
 
 .griditem:first-of-type{
