@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--<link rel="stylesheet" href="style/normalize.css">--->
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="style/normalize.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
   <!--adding jquery to make a sticky menu-->
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>$(document).ready(function() {
@@ -38,7 +38,7 @@
   <div class="fullNav">
     <!--- check what is better a class logo or img id logo--->
     <a class="logo" title="Aloha Apparel Co." href="http://alohaapparel.dev"><img src="images/aloha-logo.svg" alt="aloha-name-black-letters"></a>
-        <nav class="menuwrapper" role="navigation">
+        <nav class="menuwrapper">
             <ul>
               <li class="menu_item"><a href="#">About</a></li>
               <li class="menu_item"><a href="#">Shop</a></li>
@@ -50,20 +50,23 @@
     </div>
 </header>
 <!--MAIN FOTO--->
+
 <section id="intro">
   <div class="text-wrapp"><!--check if text can be wrapped into span with two fonts and br-->
     <h2>New collection</h2>
-    <h1>Spring / Summer 2016</h1>
-    </div>
+    <h1>Spring / Summer 2017</h1>
+  </div>
   <!--first I used img tag in thml, but it actually works better with tw images in css background<img src="images/banner-girl.png" alt="" id="middle_photo">-->
 </section>
-<section id="motto">
-  <h3>Hand-Crafted <span>Styles</span></h3>
-  <p>Aloha Apparel Co. sells only the finest ready-to-trvel clothing. Bowse our current selection of products or signup for updates below.</p>
-</section><!---end of MOTTO-->
+
 <!-- FEATURED, gallery section--->
+
 <section id="featured">
-  <div class="grid-container">
+  <div class="text-wrapp">
+    <h3>Hand-Crafted <span>Styles</span></h3>
+    <p>Aloha Apparel Co. sells only the finest ready-to-trvel clothing. Bowse our current selection of products or signup for updates below.</p>
+  </div>
+  <div class="grid-container"><!--are the category clickable?-->
     <div class="griditem"><p>Men's</p></div>
     <div class="griditem"><p>Trends</p></div>
     <div class="griditem"><p>Glasses</p></div>
@@ -73,24 +76,37 @@
   </div>
 </section>
 
-<!--- SLIDER, product section , here will be jquery carousel plugin-- >
-<section id="slider"></section>
+
+<!--- SLIDER, product section , here will be jquery carousel plugin-->
+
+<section id="slider">
+  <div class="text-wrapp">
+    <h3>Most loved <span>Products</span></h3>
+  </div>
+  <!--images for carousel-->
+      <img src="images/checked-stretch-dress.jpg" alt="red_dress">
+      <img src="images/blue-hipster-backpack.jpg" alt="blue_hipster_backpack">
+      <img src="images/demin-overall-shorts.jpg" alt="blue_denim_shorts">
+      <img src="images/pink-dotted-dress.jpg" alt="pink_dotted_dress">
+</section>
 <!---NEWSLETTER section---------->
 <section id="newsletter">
   <div class="subscription">
     <h3>Sign-up for<span> Updates</span></h3>
     <p>Stay udated on our latest product releases, be first to fins out about upcomig sales, ane get free style tips from our blog. Unsubscribe at any time.</p>
-    <form class="" action="index.html" method="post"><!--how can I put link in action to lead to actual newsletter software?-->
+    <form class="newsletter-signup" action="index.html" method="post"><!--how can I put link in action to lead to actual newsletter software?-->
       <input type="email" name="mail-address" placeholder="Your email">
       <!---should I use the input instead of button? <input type="submit" name="submit" value="subscribe"> the doc says contro over design is smaller than with buttons-->
       <button type="submit" name="submit" id="subscribe_button">subscribe</button>
     </form>
   </div>
-</section><!---end of NEWSLETTER-->
-<!---------FOOTER-->
+</section>
+
+<!---end of NEWSLETTER-->
+<!---FOOTER-->
 <footer>
   <div class="contact">
-    <p>copyrigth 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
+    <p>&copy;copyrigth 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
     <p>604-604-6040. info@alohaapparel.com</p>
     <p class="address">1490 W Broadway <br> Vancouver, BC, Canada</p>
   </div>

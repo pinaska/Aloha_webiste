@@ -1,108 +1,69 @@
 /* css style sheet for Aloha Apparel Co. */
 /*GENERAL STYLES*/
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-*,*{
-  margin: 0;
-  padding: 0;
-}
 body{
-  font-size: 1em; /*desktop 16px; mobile: 14px=0.875em;*/
-  font-family: "Raleway Light", sans-serif;
+  font-size: 1rem; /*desktop 16px; mobile: 14px=0.875rem - will work it with media queries;*/
+  font-family: 'Raleway Light', sans-serif;
   color: #2d2d2d;
   text-align: center;
   margin: 0 auto;
   /* should I set up the max-width 1240px?*/
 }
-h1, h2, h3, h4, h5, h6{
-  font-family: "Playfair Display",sans-serif;
+section{
+}
+
+a{
+  text-decoration: none;
 }
 /*FONTS---------- needs to work on this later*/
 @font-face {
-    font-family: "Playfair Display";
-    src: url("/fonts/playfairdisplay-bold.eot"); src: url("/fonts/playfairdisplay-bold.woff2") format("woff2"),
-         url("../fonts/playfairdisplay-bold.ttf") format("truetype"),
-         url("../fonts/playfairdisplay-bold.svg") format("svg");
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-Regular.otf");
 }
-
-@font-face {
-    font-family: "Playfair Display";
-    src: url("../fonts/playfair-bolditalic.eot"),
-         url("../fonts/playfair-bolditalic.woff2") format("woff2"),
-         url("../fonts/playfair-bolditalic.ttf") format("truetype"),
-         url("../fonts/playfair-bolditalic.svg") format("svg");
-    font-weight: bold;
-    font-style: italic;
+@font-face{
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-Italic.otf");
+  font-style: italic;
 }
-
-@font-face {
-    font-family: "Playfair Display";
-    src: url("../fonts/playfairdisplay-italic.eot"),
-         url("../fonts/playfairdisplay-italic.woff2") format("woff2"),
-         url("../fonts/playfairdisplay-italic.ttf") format("truetype"),
-         url("../fonts/playfairdisplay-italic.svg") format("svg");
-    font-weight: normal;
-    font-style: italic;
+@font-face{
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-Bold.otf");
+  font-weight: bold;
 }
-
-@font-face {
-    font-family: "Playfair Display";
-    src: url("../fonts/playfairdisplay-regular.eot"),
-         url("../fonts/playfairdisplay-regular.woff2") format("woff2"),
-         url("../fonts/playfairdisplay-regular.ttf") format("truetype"),
-         url("../fonts/playfairdisplay-regular.svg") format("svg");
-    font-weight: normal;
-    font-style: normal;
+@font-face{
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-BoldItalic.otf");
+  font-style: italic;
+  font-weight: bold;
 }
-
-@font-face {
-    font-family: "Raleway";
-    src: url("../fonts/raleway-light.eot"),
-         url("../fonts/raleway-light.woff2") format("woff2"),
-         url("../fonts/raleway-light.ttf") format("truetype"),
-         url("../fonts/raleway-light.svg") format("svg");
-    font-weight: normal;
-    font-style: normal;
+@font-face{
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Medium.ttf");
 }
-
-@font-face {
-    font-family: "Raleway";
-    src: url("../fonts/raleway-lightitalic.eot"),
-         url("../fonts/raleway-lightitalic.woff2") format("woff2"),
-         url("../fonts/raleway-lightitalic.ttf") format("truetype"),
-         url("../fonts/raleway-lightitalic.svg") format("svg");
-    font-weight: normal;
-    font-style: italic;
+@font-face{
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-MediumItalic.ttf");
+  font-style: italic;
 }
-
-@font-face {
-    font-family: "Raleway";
-    src: url("../fonts/raleway-medium.eot"),
-         url("../fonts/raleway-medium.woff2") format("woff2"),
-         url("../fonts/raleway-medium.ttf") format("truetype"),
-         url("../fonts/raleway-medium.svg") format("svg");
-    font-weight: bold;
-    font-style: normal;
+@font-face{
+  font-family: "Ralway";
+  src: url("../fonts/Ralway-Light.ttf");
 }
-
-@font-face {
-    font-family: "Raleway";
-    src: url("../fonts/raleway-mediumitalic.eot"),
-         url("../fonts/raleway-mediumitalic.woff2") format("woff2"),
-         url("../fonts/raleway-mediumitalic.ttf") format("truetype"),
-         url("../fonts/raleway-mediumitalic.svg") format("svg");
-    font-weight: bold;
-    font-style: italic;
-  }
+@font-face{
+  font-family: "Ralway";
+  src: url("../fonts/Ralway-LightItalic.ttf");
+  font-style: italic;
+}
+h3{
+  font-family: "Playfair Display",serif;
+  line-height: 1;
+  font-size: 5rem;/*80px according to PS*/
+  font-style: italic;
+  font-weight: lighter;
+}
+span{
+  font-weight: bold;
+  font-style: normal;
+}
 
 /*NAVIGATION* -----*/
 ul {
@@ -110,16 +71,15 @@ ul {
    justify-content: space-around;
    list-style-type: none;
  }
-
- li  {
+li {
    display: block;
-   padding: .6em 1em;
- }
- li a{
-   font-size: 1.5em;
+   padding: .6rem 1rem;
+}
+li a{
+   font-size: 2.063rem;/*33px according to ps*/
    color:#e2574c;
    text-transform: uppercase;
-   text-decoration: none;
+   font-family: "Raleway";
  }
  li a:hover {
  	color:#b64036;
@@ -134,67 +94,71 @@ ul {
    height: 200px;
    display: flex;
    justify-content: space-around;
+   /*fixed nav?
+     position: fixed;
+     top:0;
+     z-index:10;
+     background: white;
+   }*/
  }
  .logo{
    width:200px;
-   margin: 3em;
+   margin: 3rem;
  }
- /*is this semantically ok? for logo I used nav a img, for cart icon I used id. Mhhhhh????*/
+ /*is this sremantically ok? for logo I used nav a img, for cart icon I used id. Mhhhhh????*/
  .fullNav a img{
    width: 250px;
  }
 
+
 #shopping_icon{
-  margin: 3em;
+  margin: 3rem;
 }
 /*INTRO*/
 #middle_photo{
   height: 1000px;
 }
 #intro{
-  height: 1100px;
-  background-image:url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
-  background-repeat: no-repeat, repeat;
-  background-size: contain, cover;/*cover really looks bad, very ugly*/
-  background-position: center 200px, center center;
-  /*girl is moving yay!!!!
-  background-attachment: fixed, scroll*/
+  background:linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/banner-girl.png") no-repeat center 200px, url("../images/flower-bkgd.jpg") repeat-x center center;
+  background-size: auto, contain, cover;
+
 }
 /*distance from top and bottom: 450px*/
 .text-wrapp{
-  display: block;
-  justify-content: center;
   text-align: center;
   max-height: 200px;
   padding: 450px 0px;
 }
-section h1, h2{
+h1, h2{
   color: #ffff;
   /*text-shadow should use #969696  so in rgba it is:*/;
-  text-shadow: 1px 0px 1px rgba(150, 150, 150, 0.5);
+  text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.5);
   text-align: center;
   /*padding: 450px 0px;*/
 }
 h1{
-  font-size: 5.125em;
+  font-size: 5.125rem;
+  text-shadow: 1px 0px 1px rgba(150, 150, 150, 0.5);
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
 }
 h2{
   text-transform: uppercase;
+  font-family: "Raleway";
+  font-weight: lighter;
 }
-/*MOTTO---------------*/
-#motto{
-  height: 530px;
-}
-/* need to figure out how to style this class here .text-wrapp{
-  padding: 125px 0px;
-}*/
+
 /*FEATURED GALLERY--------------*/
+p{
+  font-size: 1.15rem;
+  text-shadow: #242424 1px 1px 2px;
+}
 .grid-container{
   display:flex;
   flex-wrap: wrap;
   align-content: space-around;
   /*grid-gap: 10px;
-  grid-template-columns: auto auto auto;*/
+  grid-tremplate-columns: auto auto auto;*/
 }
 /*using flexbox to see if it gets easier to position a text*/
 .griditem p{
@@ -202,16 +166,16 @@ h2{
   align-items: center;
   justify-content: center;
   padding: 0 5px;
-  font-size: 3.625em;
+  font-size: 3.625rem;
   text-transform: uppercase;
   color: #ffff;
 
 }
 .griditem{
-background-size: cover;
-background-repeat: no-repeat;
-margin: 5px;
-flex: 1 1 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  flex: 1 1 auto;
 }
 
 .griditem:first-of-type{
@@ -232,17 +196,32 @@ flex: 1 1 auto;
 .griditem:last-of-type {
   background-image: url(../images/womens-category.jpg);
 }
+/*SLIDER------*/
 
+/*NEWSLETTER------*linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)*/
+#newsletter{
+  height: 700px;
+  background: linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.5)), url(../images/wave-bkgd.jpg) no-repeat center;
+  /*I assumed it is fixed because on jpgs there is a liitle scroll bar on the right
+  background-attachment: fixed;*/
+  color:#ffff;
+  margin-bottom: 8px
+}
+.subscription{
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 150px;
+}
 /*FOOTER-------------------------*/
 footer{
   display: flex;
   justify-content: space-between;
   background-color: #242424;
   color: #ffff;
-  padding: 140px 40px; /*need to recalculate again with text height*/
+  padding: 140px 40px;
 }
 div.contact{
-text-align: left;
+  text-align: left;
 }
 p.address{
   color: #969696
@@ -260,13 +239,4 @@ p.address{
 }
 footer p{
   padding: 10px 0;
-}
-/*NEWSLETTER------*/
-#newsletter{
-  height: 700px;
-  background-image: url(../images/wave-bkgd.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
