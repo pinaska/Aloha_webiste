@@ -1,6 +1,6 @@
 /* css style sheet for Aloha Apparel Co. */
 /*GENERAL STYLES*/
-body{
+body {
   font-size: 1rem; /*desktop 16px; mobile: 14px=0.875rem - will work it with media queries;*/
   font-family: 'Raleway Light', sans-serif;
   color: #2d2d2d;
@@ -8,10 +8,7 @@ body{
   margin: 0 auto;
   /* should I set up the max-width 1240px?*/
 }
-section{
-}
-
-a{
+a {
   text-decoration: none;
 }
 /*FONTS---------- needs to work on this later*/
@@ -19,17 +16,17 @@ a{
   font-family: "Playfair Display";
   src: url("../fonts/PlayfairDisplay-Regular.otf");
 }
-@font-face{
+@font-face {
   font-family: "Playfair Display";
   src: url("../fonts/PlayfairDisplay-Italic.otf");
   font-style: italic;
 }
-@font-face{
+@font-face {
   font-family: "Playfair Display";
   src: url("../fonts/PlayfairDisplay-Bold.otf");
   font-weight: bold;
 }
-@font-face{
+@font-face {
   font-family: "Playfair Display";
   src: url("../fonts/PlayfairDisplay-BoldItalic.otf");
   font-style: italic;
@@ -39,12 +36,12 @@ a{
   font-family: "Raleway";
   src: url("../fonts/Raleway-Medium.ttf");
 }
-@font-face{
+@font-face {
   font-family: "Raleway";
   src: url("../fonts/Raleway-MediumItalic.ttf");
   font-style: italic;
 }
-@font-face{
+@font-face {
   font-family: "Ralway";
   src: url("../fonts/Ralway-Light.ttf");
 }
@@ -53,18 +50,23 @@ a{
   src: url("../fonts/Ralway-LightItalic.ttf");
   font-style: italic;
 }
-h3{
+h3 {
   font-family: "Playfair Display",serif;
   line-height: 1;
   font-size: 5rem;/*80px according to PS*/
   font-style: italic;
   font-weight: lighter;
 }
-span{
+span {
   font-weight: bold;
   font-style: normal;
 }
-
+.container {
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 /*NAVIGATION* -----*/
 ul {
    display: flex;
@@ -115,12 +117,10 @@ li a{
   margin: 3rem;
 }
 /*INTRO*/
-#middle_photo{
-  height: 1000px;
-}
 #intro{
-  background:linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/banner-girl.png") no-repeat center 200px, url("../images/flower-bkgd.jpg") repeat-x center center;
-  background-size: auto, contain, cover;
+  background:linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/banner-girl.png") no-repeat center 80px, url("../images/flower-bkgd.jpg") repeat-x center center;
+  background-size: auto, contain, contain;/*check the contain for flower background with media query for screen*/
+   height: 400px;
 
 }
 /*distance from top and bottom: 450px*/
@@ -214,29 +214,38 @@ p{
 }
 /*FOOTER-------------------------*/
 footer{
-  display: flex;
-  justify-content: space-between;
   background-color: #242424;
   color: #ffff;
   padding: 140px 40px;
 }
-div.contact{
+.contact{
   text-align: left;
 }
-p.address{
+.address{
   color: #969696
 }
 .social-menu{
   display: block;
+  text-align: left;
 }
 .social a{
   color: #ffff;
   text-transform: capitalize;
-
-}
-.social-menu {
-  text-align: left;
 }
 footer p{
   padding: 10px 0;
+}
+
+/*MEDIA QUERIES--*/
+@media all and  (min-width: 1240px){
+  #intro {
+        /*background-size: cover,250px 615px,contain;*/
+        height: 550px;
+        /*position: relative;*/
+  }
+  .text-wrapp {
+    text-align: center;
+    max-height: 200px;
+    padding: 150px 0px;
+  }
 }
