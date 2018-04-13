@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style/normalize.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -28,49 +28,58 @@
   });
   });
 </script>--->
-  <title>Aloha Apparel Co.</title>
+    <title>Aloha Apparel Co.</title>
   <meta name="description" content="A most excellent website about appareal">
-<meta name="author" content="Aloha Appareal Co.">
+  <meta name="author" content="Aloha Appareal Co.">
 </head>
 <body>
-  <!--- HEADER: logo | menu navigation | shopping cart-->
-<header class="fullNav container">
-    <!--- check what is better a class logo or img id logo--->
-    <a class="logo" title="Aloha Apparel Co." href="http://alohaapparel.dev"><img src="images/aloha-logo.svg" alt="aloha-name-black-letters"></a>
-    <img src="images/cart-icon.svg" alt="online-shopping-cart-icon-black" id="shopping_icon">
-        <nav class="menuwrapper">
-            <ul>
-              <li class="menu_item"><a href="#intro">About</a></li>
-              <li class="menu_item"><a href="#featured">Shop</a></li>
-              <li class="menu_item"><a href="#">Featured</a></li>
-              <li class="menu_item"><a href="#">Updates</a></li>
-            </ul>
-        </nav>
-</header>
+  <!--- HEADER:fixed nav?
+    position: fixed;
+    top:0;
+    z-index:10;
+    background: white;
+  }-->
+  <header class="full_nav container">
+      <div id="logo">
+        <a title="Aloha Apparel Co."   href="http://alohaapparel.dev"><img   src="images/aloha-logo.svg" alt="aloha-name-black-letters"></a>
+      </div>
+
+      <div id="shopping_icon">
+        <img src="images/cart-icon.svg"  alt="online-shopping-cart-icon-black">
+      </div>
+
+      <nav id="menuwrapper">
+        <ul>
+          <li class="menu_item"><a href="#intro">About</a></li>
+          <li class="menu_item"><a href="#featured">Shop</a></li>
+          <li class="menu_item"><a href="#">Featured</a></li>
+          <li class="menu_item"><a href="#">Updates</a></li>
+        </ul>
+      </nav>
+  </header>
 <!--MAIN FOTO--->
 
 <section id="intro">
-  <div class="text-wrapp"><!--check if text can be wrapped into span with two fonts and br-->
+  <div class="text-wrapp">
     <h2>New collection</h2>
-    <h1>Spring / Summer 2017</h1>
+    <h1>Spring / Summer <span class="year">2016</span></h1>
   </div>
-  <!--first I used img tag in thml, but it actually works better with tw images in css background<img src="images/banner-girl.png" alt="" id="middle_photo">-->
 </section>
 
 <!-- FEATURED, gallery section--->
 
 <section id="featured">
-  <div class="text-wrapp">
+  <div class="text-wrapp-second">
     <h3>Hand-Crafted <span>Styles</span></h3>
     <p>Aloha Apparel Co. sells only the finest ready-to-trvel clothing. Bowse our current selection of products or signup for updates below.</p>
   </div>
-  <div class="grid-container"><!--are the category clickable?-->
-    <div class="griditem"><p>Men's</p></div>
-    <div class="griditem"><p>Trends</p></div>
-    <div class="griditem"><p>Glasses</p></div>
-    <div class="griditem"><p>Sale</p></div>
-    <div class="griditem"><p>Bags</p></div>
-    <div class="griditem"><p>Women's</p></div><!--adding hover status to category name women-->
+  <div class="flex-container"><!--are the category clickable?-->
+    <div class="flexitem wide-item"><a href="#">Men's</a></div>
+    <div class="flexitem square-item"><a href="#">Trends</a></div>
+    <div class="flexitem square-item"><a href="#">Glasses</a></div>
+    <div class="flexitem square-item"><a href="#">Sale</a></div>
+    <div class="flexitem square-item"><a href="#">Bags</a</div>
+    <div class="flexitem wide-item"><a href="#">Women's</a></div><!--adding hover status to category name women-->
   </div>
 </section>
 
@@ -78,14 +87,16 @@
 <!--- SLIDER, product section , here will be jquery carousel plugin-->
 
 <section id="slider">
-  <div class="text-wrapp">
+  <div class="text-wrapp-thrid">
     <h3>Most loved <span>Products</span></h3>
   </div>
   <!--images for carousel-->
+    <div class="carusel">
       <img src="images/checked-stretch-dress.jpg" alt="red_dress">
       <img src="images/blue-hipster-backpack.jpg" alt="blue_hipster_backpack">
       <img src="images/demin-overall-shorts.jpg" alt="blue_denim_shorts">
       <img src="images/pink-dotted-dress.jpg" alt="pink_dotted_dress">
+    </div>
 </section>
 <!---NEWSLETTER section---------->
 <section id="newsletter">
@@ -103,18 +114,18 @@
 <!---end of NEWSLETTER-->
 <!---FOOTER-->
     <footer>
-      <div class="container">
+      <div class="footer-div container">
         <div class="contact ">
-          <p>&copy;copyrigth 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
+          <p>&copy; 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
           <p>604-604-6040. info@alohaapparel.com</p>
           <p class="address">1490 W Broadway <br> Vancouver, BC, Canada</p>
         </div>
         <ul class="social-menu">
-          <li class="social"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
-          <li class="social"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-          <li class="social"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-          <li class="social"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
-          <li class="social"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> Google+</a></li>
+          <li class="social"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p class="social-text">Facebook</p></a></li>
+          <li class="social"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="social-text"> Twitter</p></a></li>
+          <li class="social"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><p class="social-text"> Instagram</p></a></li>
+          <li class="social"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i><p class="social-text"> Pinterest</p></a></li>
+          <li class="social"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><p class="social-text"> Google+</p></a></li>
         </ul>
       </div><!--end of container class-->
     </footer>
