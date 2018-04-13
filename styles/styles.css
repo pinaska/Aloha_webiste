@@ -363,6 +363,14 @@ footer p{
   #menuwrapper{
     order:1;
   }
+  #shopping_icon img{
+    max-width: 120px;
+  }
+  #intro{
+    background-size: cover,250px 615px,contain;
+    background-repeat: no-repeat, no-repeat, repeat;/*how to get it repeated nicly?*/
+    height: 40rem;
+  }
   nav ul{
     border: none;
   }
