@@ -374,4 +374,14 @@ footer p{
   nav ul{
     border: none;
   }
+  .social-text{
+    font-size: 16px;
+  }
+  .footer-div{
+    display: flex;
+    justify-content: space-around;
+  }
+  footer p{
+
+  }
 }
