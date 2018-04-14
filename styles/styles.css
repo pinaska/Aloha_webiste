@@ -1,5 +1,5 @@
-./* css style sheet for Aloha Apparel Co. */
 /*GENERAL STYLES mobile first, width of screen: 600px*/
+./* css style sheet for Aloha Apparel Co. */
 /*FONTS-*/
 @font-face {
     font-family: 'Raleway';
@@ -150,6 +150,18 @@ li{
   display:flex;
   flex-wrap:wrap;
   justify-content: space-between;
+  /*fixed navigation*/
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:   1;
+  background-color: #ffff;
+  border-bottom: 1px solid #d7d7d7;
+  /*figuring out how to make shadow responsive*/
+  -webkit-box-shadow: 1px 1px 0.5px 0.5px rgba(215,215,215,1);
+  -moz-box-shadow: 1px 1px 0.5px 0.5px rgba(215,215,215,1);
+  box-shadow: 1px 1px 0.5px 0.5px rgba(215,215,215,1);
 }
 .container{
   padding: 1% 2%;
@@ -209,6 +221,8 @@ nav ul {
   color: white;
   height: 400px;
   display: flex;
+  margin-top: 100px;
+  position: relative; /*due to sticky navigation*/
 }
 .text-wrapp{
   align-content: center;
@@ -240,51 +254,70 @@ h2{
 }
 
 /*FEATURED GALLERY--------------*/
-.flex-container{
-  display:flex;
-  flex-wrap: wrap;
-  align-content: space-around;
-  text-align: center;
-}
-.flexitem a{
-  padding: 0 5px;
-  font-size: 3.625rem;
-  text-transform: uppercase;
-  color: #ffff;
-
-}
-.flexitem{
+/*css positioning-*/
+/* .category-container{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+      "men men"
+      "trends glasses"
+      "sale bags"
+      "women women";
+  grid-gap:5px;
+  height: 200vh;
+} */
+/*flexbox try---*/
+.category-container{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   text-align: center;
+  height: 200vh;
+}
+.men{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/mens-category.jpg");
+  background-size: cover;
+  /* grid-area: men; */
+  flex:2 0 100%;
+  width: 100%;
+}
+.trends{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/trends-category.jpg");
+  background-size: cover;
+  /* grid-area: trends; */
+  flex:1 0 50%;
+  width: 50%;
+}
+.glasses{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/glasses-category.jpg");
+  background-size: cover;
+  /* grid-area: glasses; */
+  flex:1 0 50%;
+  width: 50%
+}
+.sale{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/sale-category.jpg");
+    background-size: cover;
+    /* grid-area: sale; */
+    flex:1 0 50%;
+    width:50%;
+}
+.bags{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/bags-category.jpg");
+  background-size: cover;
+  /* grid-area: bags; */
+  flex:1 0 50%;
+  width: 50%;
+}
+.women{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
+   url("../images/womens-category.jpg");
+  background-size: cover;
+  /* grid-area: women; */
+  flex:2 0 100%;
+  width: 100%;
+
 }
 
-.flexitem:first-of-type{
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
-    url("../images/mens-category.jpg");
-    background-size: cover,cover;
-}
-.flexitem:nth-of-type(2) {
-  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%) url("../images/trends-category.jpg");
-  background-size: cover,cover;
-}
-.flexitem:nth-of-type(3) {
-  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%) url("../images/glasses-category.jpg");
-  background-size: cover,cover;
-}
-.flexitem:nth-of-type(4) {
-  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%) url("../images/sale-category.jpg");
-  background-size: cover,cover;
-}
-.flexitem:nth-of-type(5) {
-  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%) url("../images/bags-category.jpg");
-  background-size: cover,cover;
-}
-.flexitem:nth-last-of-type(6){
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%)
-    url("../images/womens-category.jpg");
-  background-size: cover,cover;
-}
 
 /*SLIDER------*/
 
@@ -337,7 +370,6 @@ footer p{
 /*NAVIGATION*/
   .full_nav {
     flex-wrap: nowrap;
-    max-width: 1240px;
   }
   #menuwrapper{
     order:1;
