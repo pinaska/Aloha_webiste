@@ -130,8 +130,6 @@ p{
   margin:0 auto;
   padding-bottom:3rem;
   font-size: 1.15rem;
-  text-shadow: #242424 1px 1px 2px;
-
 }
 span {
   font-weight: bold;
@@ -160,7 +158,6 @@ li{
 }
 #logo{
   order:1;
-  /*align-self: flex-start;*/
   flex: 0 1 50%;
   text-align: left;
 }
@@ -168,13 +165,13 @@ li{
   max-width: 120px;
 }
 #shopping_icon{
-  /*align-self: flex-end;*/
   flex: 0 1 50%;
   text-align: right;
   order:2;
 }
 #shopping_icon img{
   width: 50px;
+  text-align: right;
 }
 #menuwrapper{
   order:3;
@@ -216,12 +213,11 @@ nav ul {
 .text-wrapp{
   align-content: center;
   margin:0 auto;
-  text-shadow: 2px 2px 4px rgba(150, 150, 150, 0.5);
 }
 h1, h2{
-  text-align: center;
   margin:0;
   border:0;
+  text-shadow: #242424 1px 1px 2px;
 }
 h1{
   font-size: 2.5rem;
@@ -249,14 +245,8 @@ h2{
   flex-wrap: wrap;
   align-content: space-around;
   text-align: center;
-  /*grid-gap: 10px;
-  grid-tremplate-columns: auto auto auto;*/
 }
-/*using flexbox to see if it gets easier to position a text*/
 .flexitem a{
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
   padding: 0 5px;
   font-size: 3.625rem;
   text-transform: uppercase;
@@ -264,53 +254,41 @@ h2{
 
 }
 .flexitem{
-  height: 25vw;
   display: flex;
-  flex-flow:row wrap;
-  justify-content: center;
-  align-items: center;
-  border:1px solid white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 5px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .flexitem:first-of-type{
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
     url("../images/mens-category.jpg");
-  background-position:right;
-  background-size:cover;
-  flex: 2 0 100%;
-  max-width: 100%;
+    background-size: cover,cover;
 }
 .flexitem:nth-of-type(2) {
-  background-image: url("../images/trends-category.jpg");
-  flex-basis: 50%;
+  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%) url("../images/trends-category.jpg");
+  background-size: cover,cover;
 }
 .flexitem:nth-of-type(3) {
-  background-image: url("../images/glasses-category.jpg");
-  flex-basis: 50%;
+  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%) url("../images/glasses-category.jpg");
+  background-size: cover,cover;
 }
 .flexitem:nth-of-type(4) {
-  background-image: url("../images/sale-category.jpg");
-  flex-basis: 50%;
+  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%) url("../images/sale-category.jpg");
+  background-size: cover,cover;
 }
 .flexitem:nth-of-type(5) {
-  background-image: url("../images/bags-category.jpg");
-  flex-basis: 50%;
+  background-image:  linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%) url("../images/bags-category.jpg");
+  background-size: cover,cover;
 }
-.flexitem:nth-of-type(6) {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
+.flexitem:nth-last-of-type(6){
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%)
     url("../images/womens-category.jpg");
-  background-position:right;
-  background-size: cover;
-  flex: 2 0 100%;
-  flex-basis: 100%;
+  background-size: cover,cover;
 }
 
 /*SLIDER------*/
 
-/*NEWSLETTER------*linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)*/
+/*NEWSLETTER--*/
 #newsletter{
   height: 700px;
   background: linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.5)), url(../images/wave-bkgd.jpg) no-repeat center;
@@ -340,22 +318,23 @@ footer{
   text-align: center;
   font-weight: lighter;
 }
-.social a{
+.social-text a{
   color: #ffff;
 }
 footer p{
-  padding: 10px 0;
+  padding: 0 0 15px 0;
 }
-.social-text{
+.social-text p{
   display: none;
 }
 
-
 /*MEDIA QUERIES--*/
+/*-Tablet*/
 @media only screen and (min-width: 600px){
   body{
     font-size:16px; /*1rem*/
   }
+/*NAVIGATION*/
   .full_nav {
     flex-wrap: nowrap;
     max-width: 1240px;
@@ -367,21 +346,46 @@ footer p{
     max-width: 120px;
   }
   #intro{
-    background-size: cover,250px 615px,contain;
+    background-size: cover,250px 615px,cover;
     background-repeat: no-repeat, no-repeat, repeat;/*how to get it repeated nicly?*/
     height: 40rem;
   }
   nav ul{
     border: none;
   }
-  .social-text{
+  /*FOOTER--*/
+  footer{
+    display: block;
+  }
+  .social-text p{
     font-size: 16px;
+    display: inline;
+  }
+  i{
+    min-width: 25px
+  }
+  .social-menu{
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+    justify-content: space-around
   }
   .footer-div{
     display: flex;
     justify-content: space-around;
   }
-  footer p{
-
+  .contact p{
+    text-align: left;
   }
+}
+/*PC*/
+@media only screen and (min-width:1240px){
+#intro {
+    background-size: cover,250px 615px,contain;
+    background-repeat: no-repeat, no-repeat, repeat;
+    height: 40rem;
+}
+.year{
+  display: inline;
+}
 }
