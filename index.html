@@ -17,76 +17,82 @@
 
   if (scrollTop > stickyNavTop) {
   $('.fullNav').addClass('sticky');
-  } else {
-  $('.fullNav').removeClass('sticky');
-  }
-  };
-  stickyNav();
+} else {
+$('.fullNav').removeClass('sticky');
+}
+};
+stickyNav();
 
-  $(window).scroll(function() {
-  stickyNav();
-  });
-  });
+$(window).scroll(function() {
+stickyNav();
+});
+});
 </script>--->
-    <title>Aloha Apparel Co.</title>
-  <meta name="description" content="A most excellent website about appareal">
-  <meta name="author" content="Aloha Appareal Co.">
+<title>Aloha Apparel Co.</title>
+<meta name="description" content="A most excellent website about appareal">
+<meta name="author" content="Aloha Appareal Co.">
 </head>
 <body>
-<header class="full_nav container">
-      <div id="logo">
-        <a title="Aloha Apparel Co."   href="http://alohaapparel.dev"><img   src="images/aloha-logo.svg" alt="aloha-name-black-letters"></a>
-      </div>
+  <header class="full_nav container">
+    <div id="logo">
+      <a title="Aloha Apparel Co."   href="http://alohaapparel.dev"><img   src="images/aloha-logo.svg" alt="aloha-name-black-letters"></a>
+    </div>
 
-      <div id="shopping_icon">
-        <img src="images/cart-icon.svg"  alt="online-shopping-cart-icon-black">
-      </div>
+    <div id="shopping_icon">
+      <img src="images/cart-icon.svg"  alt="online-shopping-cart-icon-black">
+    </div>
 
-      <nav id="menuwrapper">
-        <ul>
-          <li class="menu_item"><a href="#intro">About</a></li>
-          <li class="menu_item"><a href="#featured">Shop</a></li>
-          <li class="menu_item"><a href="#">Featured</a></li>
-          <li class="menu_item"><a href="#">Updates</a></li>
-        </ul>
-      </nav>
+    <nav id="menuwrapper">
+      <ul>
+        <li class="menu_item"><a href="#intro">About</a></li>
+        <li class="menu_item"><a href="#featured">Shop</a></li>
+        <li class="menu_item"><a href="#">Featured</a></li>
+        <li class="menu_item"><a href="#">Updates</a></li>
+      </ul>
+    </nav>
   </header>
-<!--MAIN FOTO--->
+  <!--MAIN FOTO--->
 
-<section id="intro">
-  <div class="text-wrapp">
-    <h2>New collection</h2>
-    <h1>Spring / Summer <span class="year">2016</span></h1>
-  </div>
-</section>
+  <section id="intro">
+    <div class="text-wrapp">
+      <h2>New collection</h2>
+      <h1>Spring / Summer <span class="year">2016</span></h1>
+    </div>
+  </section>
 
-<!-- FEATURED, gallery section--->
+  <!-- FEATURED, gallery section--->
 
-<section id="featured">
-  <div class="text-wrapp-second">
-    <h3>Hand-Crafted <span>Styles</span></h3>
-    <p>Aloha Apparel Co. sells only the finest ready-to-trvel clothing. Bowse our current selection of products or signup for updates below.</p>
-  </div>
+  <section id="featured">
+    <div>
+      <h3>Hand-Crafted <span>Styles</span></h3>
+      <p>Aloha Apparel Co. sells only the finest ready-to-trvel clothing. Bowse our current selection of products or signup for updates below.</p>
+    </div>
 
-  <div class="category-container"><!--are the category clickable?-->
-    <div class="men"><a href="#">Men's</a></div>
-    <div class="trends"><a href="#"></a></div>
-    <div class="glasses"><a href="#"></a></div>
-    <div class="sale"><a href="#"></a></div>
-    <div class="bags"><a href="#"></a></div>
-    <div class="women"><a href="#"></a></div>
+    <div class="category-container"><!--are the category clickable?-->
+      <div class="men wide">
+        <p class="featured-text"><a href="#">men's</a></p></div>
+      <div class="trends square">
+        <p class="featured-text"><a href="#">trends</p></a></div>
+      <div class="glasses square"> >
+        <p class="featured-text"><a href="#">glasses</a></p></div>
+      <div class="sale square"> >
+        <p class="featured-text"><a href="#">sale</a></p></div>
+      <div class="bags square"> >
+        <p class="featured-text"><a href="#">bags</a></p></div>
+      <div class="women wide"> >
+        <p class="featured-text"><a href="#">women's</a></p></div>
 
-  </div>
-</section>
+    </div>
+  </section>
 
 
-<!--- SLIDER, product section , here will be jquery carousel plugin-->
+  <!--- SLIDER, product section , here will be jquery carousel plugin-->
 
-<section id="slider">
-  <div class="text-wrapp-thrid">
-    <h3>Most loved <span>Products</span></h3>
-  </div>
-  <!--images for carousel-->
+  <section id="slider">
+    <div class="text-wrapp-thrid">
+      <h3>Most loved <span>Products</span></h3>
+    </div>
+    <!--images for carousel-->
     <div class="carusel"><!--item list-->
       <div class="item-wrapper">
         <img src="images/checked-stretch-dress.jpg" alt="red_dress"/><h4 class="store-category">dresses</h4><p class="category-text">checked stretch dress</p><p class="category-price">$ 129.00</p>
@@ -110,37 +116,37 @@
         <img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress" /><h4 class="store-category">dresses</h4><p class="category-text">stretch knit dress</p><p class="category-price">$ 99.00</p>
       </div>
     </div>
-</section>
-<!---NEWSLETTER section---------->
-<section id="newsletter">
-  <div class="subscription">
-    <h3>Sign-up for<span> Updates</span></h3>
-    <p>Stay udated on our latest product releases, be first to fins out about upcomig sales, ane get free style tips from our blog. Unsubscribe at any time.</p>
-    <form class="newsletter-signup" action="index.html" method="post"><!--how can I put link in action to lead to actual newsletter software?-->
-      <input type="email" name="mail-address" placeholder="Your email">
-      <!---should I use the input instead of button? <input type="submit" name="submit" value="subscribe"> the doc says contro over design is smaller than with buttons-->
-      <button type="submit" name="submit" id="subscribe_button">subscribe</button>
-    </form>
-  </div>
-</section>
+  </section>
+  <!---NEWSLETTER section---------->
+  <section id="newsletter">
+    <div class="subscription">
+      <h3>Sign-up for<span> Updates</span></h3>
+      <p>Stay udated on our latest product releases, be first to fins out about upcomig sales, ane get free style tips from our blog. Unsubscribe at any time.</p>
+      <form class="newsletter-signup" action="index.html" method="post"><!--how can I put link in action to lead to actual newsletter software?-->
+        <input type="email" name="mail-address" placeholder="Your email">
+        <!---should I use the input instead of button? <input type="submit" name="submit" value="subscribe"> the doc says contro over design is smaller than with buttons-->
+        <button type="submit" name="submit" id="subscribe_button">subscribe</button>
+      </form>
+    </div>
+  </section>
 
-<!---end of NEWSLETTER-->
-<!---FOOTER-->
-    <footer>
-      <div class="footer-div container">
-        <div class="contact ">
-          <p>&copy; 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
-          <p>604-604-6040. info@alohaapparel.com</p>
-          <p class="address">1490 W Broadway <br> Vancouver, BC, Canada</p>
-        </div>
-        <ul class="social-menu">
-          <li class="social-text"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p class="social-text">Facebook</p></a></li>
-          <li class="social-text"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="social-text">Twitter</p></a></li>
-          <li class="social-text"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><p class="social-text">Instagram</p></a></li>
-          <li class="social-text"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i><p class="social-text">Pinterest</p></a></li>
-          <li class="social-text"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><p class="social-text">  Google+</p></a></li>
-        </ul>
-      </div><!--end of container class-->
-    </footer>
-  </body>
+  <!---end of NEWSLETTER-->
+  <!---FOOTER-->
+  <footer>
+    <div class="footer-div container">
+      <div class="contact ">
+        <p>&copy; 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
+        <p>604-604-6040. info@alohaapparel.com</p>
+        <p class="address">1490 W Broadway <br> Vancouver, BC, Canada</p>
+      </div>
+      <ul class="social-menu">
+        <li class="social-text"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p class="social-text">Facebook</p></a></li>
+        <li class="social-text"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="social-text">Twitter</p></a></li>
+        <li class="social-text"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><p class="social-text">Instagram</p></a></li>
+        <li class="social-text"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i><p class="social-text">Pinterest</p></a></li>
+        <li class="social-text"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><p class="social-text">  Google+</p></a></li>
+      </ul>
+    </div><!--end of container class-->
+  </footer>
+</body>
 </html>
