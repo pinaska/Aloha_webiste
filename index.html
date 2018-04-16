@@ -44,10 +44,10 @@ stickyNav();
 
     <nav id="menuwrapper">
       <ul>
-        <li class="menu_item"><a href="#intro">About</a></li>
-        <li class="menu_item"><a href="#featured">Shop</a></li>
-        <li class="menu_item"><a href="#">Featured</a></li>
-        <li class="menu_item"><a href="#">Updates</a></li>
+        <li class="menu_item smoothScroll" id="about"><a href="#intro">About</a></li>
+        <li class="menu_item smoothScroll" id="shop"><a href="#featured">Shop</a></li>
+        <li class="menu_item smoothScroll" id="featured"><a href="#">Featured</a></li>
+        <li class="menu_item smoothScroll" id="updates"><a href="#">Updates</a></li>
       </ul>
     </nav>
   </header>
@@ -148,5 +148,17 @@ stickyNav();
       </ul>
     </div><!--end of container class-->
   </footer>
+  <!--a script I found online, not tested yet-> <script>
+
+  $(function () {
+  $.srSmoothscroll({
+    step: 55,
+    speed: 400,
+    ease: 'swing',
+    target: $('body'),
+    container: $(window)
+  })
+})
+</script> -->
 </body>
 </html>
