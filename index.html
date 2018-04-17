@@ -51,7 +51,7 @@ stickyNav();
       </ul>
     </nav>
   </header>
-  <!--MAIN FOTO--->
+  <!--MAIN PFOTO--->
 
   <section id="intro">
     <div class="text-wrapp">
@@ -59,13 +59,11 @@ stickyNav();
       <h1>Spring / Summer <span class="year">2016</span></h1>
     </div>
   </section>
-
   <!-- FEATURED, gallery section--->
-
   <section id="featured">
-    <div>
+    <div class="text-wrapp-feautered">
       <h3>Hand-Crafted <span>Styles</span></h3>
-      <p>Aloha Apparel Co. sells only the finest ready-to-trvel clothing. Bowse our current selection of products or signup for updates below.</p>
+      <p>>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below</p>
     </div>
 
     <div class="category-container"><!--are the category clickable?-->
@@ -84,44 +82,48 @@ stickyNav();
 
     </div>
   </section>
-
-
   <!--- SLIDER, product section , here will be jquery carousel plugin-->
-
   <section id="slider">
-    <div class="text-wrapp-thrid">
+    <div class="text-wrapp-slider">
       <h3>Most loved <span>Products</span></h3>
     </div>
     <!--images for carousel-->
     <div class="carusel"><!--item list-->
       <div class="item-wrapper">
         <img src="images/checked-stretch-dress.jpg" alt="red_dress"/><h4 class="store-category">dresses</h4><p class="category-text">checked stretch dress</p><p class="category-price">$ 129.00</p>
+        <button type="button" class="add-to-cart">Add to Cart</button>
       </div>
       <div class="item-wrapper">
         <img src="images/blue-hipster-backpack.jpg"alt="blue_hipster_backpack"/><h4 class="store-category">bags</h4><p class="category-text">blue hipster backpack</p><p class="category-price">$ 69.00</p>
+        <button type="button" class="add-to-cart">Add to Cart</button>
       </div>
       <div class="item-wrapper">
         <img src="images/demin-overall-shorts.jpg" alt="blue_denim_shorts"/><h4 class="store-category">demin</h4><p class="category-text">demin overall shorts</p><p class="category-price">$ 89.00</p>
+        <button type="button" class="add-to-cart">Add to Cart</button>
       </div>
       <div class="item-wrapper">
         <img src="images/pink-dotted-dress.jpg" alt="pink_dotted_dress"/><h4 class="store-category">dresses</h4><p class="category-text">pink dotted dress</p><p class="category-price">$ 99.00</p>
+        <button type="button" class="add-to-cart">Add to Cart</button>
       </div>
       <div class="item-wrapper">
         <img src="images/blue-silk-dress.jpg" alt="blue_silk_dress" /><h4 class="store-category">dresses</h4><p class="category-text">blue silk dress</p><p class="category-price">$ 99.00</p>
+        <button type="button" class="add-to-cart">Add to Cart</button>
       </div>
       <div class="item-wrapper">
         <img src="images/cotton-yellow-tshirt.jpg" alt="cotton_yellow_tshirt" /><h4 class="store-category">tshirts</h4><p class="category-text">cotton yellow tshirt</p><p class="category-price">$ 49.00</p>
+        <button type="button" class="add-to-cart">Add to Cart</button>
       </div>
       <div class="item-wrapper">
         <img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress" /><h4 class="store-category">dresses</h4><p class="category-text">stretch knit dress</p><p class="category-price">$ 99.00</p>
+        <button type="button" class="add-to-cart">Add to Cart</button>
       </div>
     </div>
   </section>
-  <!---NEWSLETTER section---------->
+  <!---NEWSLETTER section-->
   <section id="newsletter">
     <div class="subscription">
       <h3>Sign-up for<span> Updates</span></h3>
-      <p>Stay udated on our latest product releases, be first to fins out about upcomig sales, ane get free style tips from our blog. Unsubscribe at any time.</p>
+      <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time</p>
       <form class="newsletter-signup" action="index.html" method="post"><!--how can I put link in action to lead to actual newsletter software?-->
         <input type="email" name="mail-address" placeholder="Your email">
         <!---should I use the input instead of button? <input type="submit" name="submit" value="subscribe"> the doc says contro over design is smaller than with buttons-->
@@ -129,8 +131,6 @@ stickyNav();
       </form>
     </div>
   </section>
-
-  <!---end of NEWSLETTER-->
   <!---FOOTER-->
   <footer>
     <div class="footer-div container">
@@ -153,6 +153,7 @@ stickyNav();
   $(function () {
   $.srSmoothscroll({
     step: 55,
+
     speed: 400,
     ease: 'swing',
     target: $('body'),

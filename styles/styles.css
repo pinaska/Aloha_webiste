@@ -209,9 +209,7 @@ nav ul {
  li a:hover {
  	color:#b64036;
  }
-
-
-/*INTRO*/
+/*MAIN PHOTO*/
 #intro{
   background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
   url("../images/banner-girl.png"),
@@ -253,8 +251,7 @@ h2{
   font-family: "Playfair Display", serif;
   font-weight: 400;
 }
-
-/*FEATURED GALLERY--------------*/
+/*FEATURED--*/
 /*css positioning-*/
 /* .category-container{
   display: grid;
@@ -345,9 +342,6 @@ h2{
   position: absolute; */
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
   text-transform: uppercase;
-  padding-bottom: 0;
-  /* top: 50%;
-  transform: translate(-50%,-50%); */
 }
 .featured-text a{
   color:#fff;
@@ -358,15 +352,44 @@ h2{
 
 
 /*SLIDER------*/
-
+h4{
+  font-size: .75rem;
+  margin-bottom: .75rem;
+  text-transform: uppercase;
+}
+.store-category, .category-price{
+  color: #969696;
+  font-weight: 700;
+}
+.category-text{
+  color: #e2574c;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+  font-family: 'Playfair Display',serif;
+  text-transform: capitalize;
+}
+.add-to-cart {
+    background-color: #242424;
+    border: 0;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+  }
 /*NEWSLETTER--*/
 #newsletter{
   height: 700px;
-  background: linear-gradient(180deg,rgba(0,0,0,.5) 0,rgba(0,0,0,.5)), url(../images/wave-bkgd.jpg) no-repeat center;
+  background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url(../images/wave-bkgd.jpg) no-repeat bottom;
   /*I assumed it is fixed because on jpgs there is a liitle scroll bar on the right
   background-attachment: fixed;*/
   color:#ffff;
-  margin-bottom: 8px
+  margin-bottom: 8px;
+  padding: 4rem 0;
 }
 .subscription{
   margin: 0 auto;
@@ -401,9 +424,13 @@ footer p{
 
 /*MEDIA QUERIES--*/
 /*-Tablet*/
+/*TABLET*/
 @media only screen and (min-width: 600px){
   body{
     font-size:16px; /*1rem*/
+  }
+  section{
+        padding: 4rem 0;
   }
 /*NAVIGATION*/
   .full_nav {
@@ -425,6 +452,12 @@ footer p{
     border: none;
   }
   /*FEATURED*/
+  .text-wrapp-feautered{
+  max-width: 720px;
+  padding: 0 2% 4rem;
+  margin: 0 auto;
+  width: 100%;
+  }
   .category-container{
     height: 100vh;
   }
@@ -441,6 +474,21 @@ footer p{
   .square{
     flex-basis: 25%;
   }
+  /*SLIDER*/
+  .carusel{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  /*NEWSLETTER--*/
+  .subscription{
+    max-width: 720px;
+    padding: 0 2%;
+    margin: 0 auto;
+    width: 100%;
+  }
+
   /*FOOTER--*/
   footer{
     display: block;
