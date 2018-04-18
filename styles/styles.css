@@ -396,6 +396,42 @@ h4{
   justify-content: center;
   padding-top: 150px;
 }
+.newsletter-signup {
+  background: white;
+  width: 386px;
+  height: 3.4rem;
+  bottom: 2.5rem;
+  margin:0 auto;
+  border-radius:2rem;
+}
+#email {
+  border-radius:2rem;
+  border-style: none;
+  box-shadow: none;
+  width: 15rem;
+  height:3rem;
+  font-family: 'Raleway',sans-serif;
+  padding: .5rem 1.75rem;
+}
+
+#subscribe_button {
+  background-color:#e2574c;
+  border-radius:2rem;
+  border-style: none;
+  box-shadow: none;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:1rem;
+  height:2.8rem;
+  padding:0 1.5rem;
+  text-decoration:none;
+  top:.3rem;
+  margin:.3rem .2rem;
+  text-transform: capitalize;
+}
+
 /*FOOTER-------------------------*/
 footer{
   background-color: #242424;
@@ -433,30 +469,30 @@ footer p{
         padding: 4rem 0;
   }
 /*NAVIGATION*/
-  .full_nav {
+.full_nav {
     flex-wrap: nowrap;
   }
-  #menuwrapper{
+#menuwrapper{
     order:1;
   }
-  #shopping_icon img{
+#shopping_icon img{
     max-width: 120px;
   }
-  #intro{
+#intro{
     background-size: cover,250px 615px,cover;
     background-repeat: no-repeat, no-repeat, repeat;/*how to get it repeated nicly?*/
     height: 40rem;
     margin-top: 50px;
   }
-  nav ul{
+nav ul{
     border: none;
   }
-  /*FEATURED*/
-  .text-wrapp-feautered{
-  max-width: 720px;
-  padding: 0 2% 4rem;
-  margin: 0 auto;
-  width: 100%;
+/*FEATURED*/
+.text-wrapp-feautered{
+    max-width: 720px;
+    padding: 0 2% 4rem;
+    margin: 0 auto;
+    width: 100%;
   }
   .category-container{
     height: 100vh;

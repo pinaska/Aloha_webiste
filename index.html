@@ -63,103 +63,104 @@ stickyNav();
   <section id="featured">
     <div class="text-wrapp-feautered">
       <h3>Hand-Crafted <span>Styles</span></h3>
-      <p>>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below</p>
+      <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below</p>
     </div>
 
     <div class="category-container"><!--are the category clickable?-->
       <div class="men wide">
         <p class="featured-text"><a href="#">men's</a></p></div>
       <div class="trends square">
-        <p class="featured-text"><a href="#">trends</p></a></div>
-      <div class="glasses square"> >
-        <p class="featured-text"><a href="#">glasses</a></p></div>
-      <div class="sale square"> >
-        <p class="featured-text"><a href="#">sale</a></p></div>
-      <div class="bags square"> >
-        <p class="featured-text"><a href="#">bags</a></p></div>
-      <div class="women wide"> >
-        <p class="featured-text"><a href="#">women's</a></p></div>
+          <p class="featured-text"><a href="#">trends</p></a></div>
+      <div class="glasses square">
+            <p class="featured-text"><a href="#">glasses</a></p></div>
+      <div class="sale square">
+            <p class="featured-text"><a href="#">sale</a></p></div>
+      <div class="bags square">
+            <p class="featured-text"><a href="#">bags</a></p></div>
+      <div class="women wide">
+            <p class="featured-text"><a href="#">women's</a></p></div>
+      </div>
+    </section>
+              <!--- SLIDER, product section , here will be jquery carousel plugin-->
+              <section id="slider">
+                <div class="text-wrapp-slider">
+                  <h3>Most loved <span>Products</span></h3>
+                </div>
+                <!--images for carousel-->
+                <div class="carusel"><!--item list-->
+                  <div class="item-wrapper">
+                    <img src="images/checked-stretch-dress.jpg" alt="red_dress"/><h4 class="store-category">dresses</h4><p class="category-text">checked stretch dress</p><p class="category-price">$ 129.00</p>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="item-wrapper">
+                    <img src="images/blue-hipster-backpack.jpg"alt="blue_hipster_backpack"/><h4 class="store-category">bags</h4><p class="category-text">blue hipster backpack</p><p class="category-price">$ 69.00</p>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="item-wrapper">
+                    <img src="images/demin-overall-shorts.jpg" alt="blue_denim_shorts"/><h4 class="store-category">demin</h4><p class="category-text">demin overall shorts</p><p class="category-price">$ 89.00</p>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="item-wrapper">
+                    <img src="images/pink-dotted-dress.jpg" alt="pink_dotted_dress"/><h4 class="store-category">dresses</h4><p class="category-text">pink dotted dress</p><p class="category-price">$ 99.00</p>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="item-wrapper">
+                    <img src="images/blue-silk-dress.jpg" alt="blue_silk_dress" /><h4 class="store-category">dresses</h4><p class="category-text">blue silk dress</p><p class="category-price">$ 99.00</p>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="item-wrapper">
+                    <img src="images/cotton-yellow-tshirt.jpg" alt="cotton_yellow_tshirt" /><h4 class="store-category">tshirts</h4><p class="category-text">cotton yellow tshirt</p><p class="category-price">$ 49.00</p>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="item-wrapper">
+                    <img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress" /><h4 class="store-category">dresses</h4><p class="category-text">stretch knit dress</p><p class="category-price">$ 99.00</p>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                  </div>
+                </div>
+              </section>
+              <!---NEWSLETTER section-->
+              <section id="newsletter">
+                <div class="subscription">
+                  <h3>Sign-up for<span> Updates</span></h3>
+                  <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time</p>
+                  <form class="newsletter-signup" action="index.html" method="post"><!--how can I put link in action to lead to actual newsletter software?-->
+                    <input type="email" id="email" name="mail-address" placeholder="Your email">
+                    <!---should I use the input instead of button? <input type="submit" name="submit" value="subscribe"> the doc says contro over design is smaller than with buttons-->
+                    <button type="submit" name="submit" id="subscribe_button">subscribe</button>
+                  </form>
+                </div>
+              </section>
+              <!---FOOTER-->
+              <footer>
+                <div class="footer-div container">
+                  <div class="contact ">
+                    <p>&copy; 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
+                    <p>604-604-6040. info@alohaapparel.com</p>
+                    <p class="address">1490 W Broadway <br> Vancouver, BC, Canada</p>
+                  </div>
+                  <ul class="social-menu">
+                    <li class="social-text"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p class="social-text">Facebook</p></a></li>
+                    <li class="social-text"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="social-text">Twitter</p></a></li>
+                    <li class="social-text"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><p class="social-text">Instagram</p></a></li>
+                    <li class="social-text"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i><p class="social-text">Pinterest</p></a></li>
+                    <li class="social-text"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><p class="social-text">  Google+</p></a></li>
+                  </ul>
+                </div><!--end of container class-->
+              </footer>
 
-    </div>
-  </section>
-  <!--- SLIDER, product section , here will be jquery carousel plugin-->
-  <section id="slider">
-    <div class="text-wrapp-slider">
-      <h3>Most loved <span>Products</span></h3>
-    </div>
-    <!--images for carousel-->
-    <div class="carusel"><!--item list-->
-      <div class="item-wrapper">
-        <img src="images/checked-stretch-dress.jpg" alt="red_dress"/><h4 class="store-category">dresses</h4><p class="category-text">checked stretch dress</p><p class="category-price">$ 129.00</p>
-        <button type="button" class="add-to-cart">Add to Cart</button>
-      </div>
-      <div class="item-wrapper">
-        <img src="images/blue-hipster-backpack.jpg"alt="blue_hipster_backpack"/><h4 class="store-category">bags</h4><p class="category-text">blue hipster backpack</p><p class="category-price">$ 69.00</p>
-        <button type="button" class="add-to-cart">Add to Cart</button>
-      </div>
-      <div class="item-wrapper">
-        <img src="images/demin-overall-shorts.jpg" alt="blue_denim_shorts"/><h4 class="store-category">demin</h4><p class="category-text">demin overall shorts</p><p class="category-price">$ 89.00</p>
-        <button type="button" class="add-to-cart">Add to Cart</button>
-      </div>
-      <div class="item-wrapper">
-        <img src="images/pink-dotted-dress.jpg" alt="pink_dotted_dress"/><h4 class="store-category">dresses</h4><p class="category-text">pink dotted dress</p><p class="category-price">$ 99.00</p>
-        <button type="button" class="add-to-cart">Add to Cart</button>
-      </div>
-      <div class="item-wrapper">
-        <img src="images/blue-silk-dress.jpg" alt="blue_silk_dress" /><h4 class="store-category">dresses</h4><p class="category-text">blue silk dress</p><p class="category-price">$ 99.00</p>
-        <button type="button" class="add-to-cart">Add to Cart</button>
-      </div>
-      <div class="item-wrapper">
-        <img src="images/cotton-yellow-tshirt.jpg" alt="cotton_yellow_tshirt" /><h4 class="store-category">tshirts</h4><p class="category-text">cotton yellow tshirt</p><p class="category-price">$ 49.00</p>
-        <button type="button" class="add-to-cart">Add to Cart</button>
-      </div>
-      <div class="item-wrapper">
-        <img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress" /><h4 class="store-category">dresses</h4><p class="category-text">stretch knit dress</p><p class="category-price">$ 99.00</p>
-        <button type="button" class="add-to-cart">Add to Cart</button>
-      </div>
-    </div>
-  </section>
-  <!---NEWSLETTER section-->
-  <section id="newsletter">
-    <div class="subscription">
-      <h3>Sign-up for<span> Updates</span></h3>
-      <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time</p>
-      <form class="newsletter-signup" action="index.html" method="post"><!--how can I put link in action to lead to actual newsletter software?-->
-        <input type="email" name="mail-address" placeholder="Your email">
-        <!---should I use the input instead of button? <input type="submit" name="submit" value="subscribe"> the doc says contro over design is smaller than with buttons-->
-        <button type="submit" name="submit" id="subscribe_button">subscribe</button>
-      </form>
-    </div>
-  </section>
-  <!---FOOTER-->
-  <footer>
-    <div class="footer-div container">
-      <div class="contact ">
-        <p>&copy; 2016 Aloha Apparel Co.<br>Powered by HTML and CSS</p>
-        <p>604-604-6040. info@alohaapparel.com</p>
-        <p class="address">1490 W Broadway <br> Vancouver, BC, Canada</p>
-      </div>
-      <ul class="social-menu">
-        <li class="social-text"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p class="social-text">Facebook</p></a></li>
-        <li class="social-text"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="social-text">Twitter</p></a></li>
-        <li class="social-text"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><p class="social-text">Instagram</p></a></li>
-        <li class="social-text"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i><p class="social-text">Pinterest</p></a></li>
-        <li class="social-text"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i><p class="social-text">  Google+</p></a></li>
-      </ul>
-    </div><!--end of container class-->
-  </footer>
-  <!--a script I found online, not tested yet-> <script>
-
-  $(function () {
-  $.srSmoothscroll({
-    step: 55,
-
-    speed: 400,
-    ease: 'swing',
-    target: $('body'),
-    container: $(window)
-  })
-})
-</script> -->
-</body>
-</html>
+              <!-- -I found online, not tested yet -->
+              <script>
+              <!--
+              //   $(function () {
+              //   $.srSmoothscroll({
+              //     step: 55,
+              //
+              //     speed: 400,
+              //     ease: 'swing',
+              //     target: $('body'),
+              //     container: $(window)
+              //   })
+              // })
+            </script>
+          </body>
+          </html>
