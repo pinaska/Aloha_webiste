@@ -23,6 +23,7 @@ $('.main-carousel').flickity({
   // options
   // wrapAround:true,
   contain: true,
+  // autoPlay: true, autoPlay messes up with the code
   freeScroll: true
 });
 
