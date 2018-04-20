@@ -164,7 +164,7 @@ li{
   display: inline;
   padding: 0 10px;
 }
-/*NAVIGATION* -----*/
+/*NAVIGATION*/
 .full_nav{
   display:flex;
   flex-wrap:wrap;
@@ -230,9 +230,10 @@ nav ul {
  }
 .menu_item{
    padding: 0.5rem;
+   margin: 0 1rem;
 }
 .menu_item a{
-   font-size: 0.8rem;/*24px according to ps so it should be 1.714rem, but it does not look good*/
+   font-size: 0.8rem;
    color:#e2574c;
    text-transform: uppercase;
    font-family: "Raleway";
@@ -264,20 +265,7 @@ nav ul {
   font-family: "Playfair Display", serif;
   font-weight: 400;
 }
-/*FEATURED--*/
-/*css positioning-*/
-/* .category-container{
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-areas:
-      "men men"
-      "trends glasses"
-      "sale bags"
-      "women women";
-  grid-gap:5px;
-  height: 200vh;
-} */
-/*flexbox try---*/
+/*SHOP*/
 .category-container{
   display: flex;
   flex-wrap:wrap;
@@ -362,9 +350,7 @@ nav ul {
 .featured-text a:hover{
   color:#b64036;
 }
-
-
-/*SLIDER------*/
+/*SLIDER-*/
 h4{
   font-size: .75rem;
   margin-bottom: .75rem;
@@ -377,11 +363,14 @@ h4{
 .category-text{
   color: #e2574c;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   line-height: 1;
   font-family: 'Playfair Display',serif;
   text-transform: capitalize;
 }
+.category-price{
+  padding: 0 0 1rem 0;
+  }
 .add-to-cart {
     background-color: #242424;
     border: 0;
@@ -403,29 +392,25 @@ h4{
 .flickity-page-dots {
       bottom: -10px;
 }
-
 .flickity-page-dots .dot {
     display:inline;
 }
 .flickity-button-icon{
   display:none;
 }
-
-
 /*NEWSLETTER--*/
 .newsletter{
   height: 700px;
   background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url(../images/wave-bkgd.jpg) no-repeat bottom;
-  /*I assumed it is fixed because on jpgs there is a liitle scroll bar on the right
-  background-attachment: fixed;*/
   color:#ffff;
   margin-bottom: 8px;
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
 }
 .subscription{
   margin: 0 auto;
   justify-content: center;
   padding-top: 150px;
+  line-height: 2rem;
 }
 .newsletter-signup {
   background: white;
@@ -434,17 +419,18 @@ h4{
   bottom: 2.5rem;
   margin:0 auto;
   border-radius:2rem;
+  display: flex;
+  justify-content: space-between;
 }
 #email {
   border-radius:2rem;
   border-style: none;
   box-shadow: none;
-  width: 15rem;
+  width: 100%;
   height:3rem;
   font-family: 'Raleway',sans-serif;
   padding: .5rem 1.75rem;
 }
-
 .subscribe_button {
   background-color:#e2574c;
   border-radius:2rem;
@@ -459,18 +445,18 @@ h4{
   margin:.3rem .2rem;
   text-transform: capitalize;
 }
-
-/*FOOTER-------------------------*/
+/*FOOTER*/
 footer{
   background-color: #242424;
   color: #ffff;
   padding: 4rem 0;
 }
-.contact{
-  font-family: 'Playfair Display';
-}
 .address{
   color: #969696
+}
+.contact span{
+  text-decoration: underline;
+  font-weight: normal;
 }
 .social-menu{
   text-align: center;
@@ -481,12 +467,12 @@ footer{
 }
 footer p{
   padding: 0 0 15px 0;
+  font-family: 'Playfair Display','serif';
 }
 .social-text p{
   display: none;
 }
-
-/*MEDIA QUERIES--*/
+/*MEDIA QUERIES*/
 /*TABLET*/
 @media only screen and (min-width: 600px){
   body{
@@ -517,7 +503,7 @@ footer p{
 nav ul{
     border: none;
   }
-/*FEATURED*/
+/*SHOP*/
 .text-wrapp-feautered{
     max-width: 720px;
     padding: 0 2% 4rem;
