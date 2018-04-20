@@ -1,4 +1,16 @@
 $(document).ready(function(){
+//adding items to cart
+var cartItems = 0;
+$('.add-to-cart').click(function(){
+    cartItems++;
+    $(".cart-items").css('visibility', 'visible');
+    $('.cart-items').html(cartItems);
+});
+
+
+
+
+
 //adding the pop-up for preventing the empty subscription
 $('form').on('submit', function(event){
     event.preventDefault();
@@ -10,12 +22,13 @@ $('form').on('submit', function(event){
     }
   });
 
-//flickity
+//flickity carusel
 $('.main-carousel').flickity({
   // options
-  wrapAround:true,
+  // wrapAround:true,
   contain: true,
   freeScroll: true
 });
 
+//smooth scrolling
 });

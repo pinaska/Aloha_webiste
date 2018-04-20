@@ -204,6 +204,20 @@ li{
   width: 50px;
   text-align: right;
 }
+.cart-items {
+    position: absolute;
+    right: .7rem;
+    font-weight: bold;
+    background: #e2574c;
+    color:#fff;
+    width: 1.6rem;
+    height: 1.6rem;
+    text-align: center;
+    line-height: 1.6rem;
+    border-radius: 50%;
+    visibility: hidden;
+    display: inline;
+}
 .menuwrapper{
   order:3;
   width: 100%;
@@ -222,7 +236,6 @@ nav ul {
    color:#e2574c;
    text-transform: uppercase;
    font-family: "Raleway";
-   font-weight: bold;
  }
  li a:hover {
  	color:#b64036;
@@ -474,7 +487,6 @@ footer p{
 }
 
 /*MEDIA QUERIES--*/
-/*-Tablet*/
 /*TABLET*/
 @media only screen and (min-width: 600px){
   body{
@@ -487,13 +499,16 @@ footer p{
 .full_nav {
     flex-wrap: nowrap;
   }
-#menuwrapper{
+.year{
+    display: inline;
+  }
+.menuwrapper{
     order:1;
   }
-#shopping_icon img{
+.shopping_icon img{
     max-width: 120px;
   }
-#intro{
+.intro{
     background-size: cover,250px 615px,cover;
     background-repeat: no-repeat, no-repeat, repeat;/*how to get it repeated nicly?*/
     height: 40rem;
@@ -537,7 +552,11 @@ nav ul{
   }
   /*NEWSLETTER--*/
 /*SLIDER*/
-#newsletter{
+.carousel-cell{
+    width: 50%;
+}
+/*NEWSLETTER*/
+.newsletter{
   height: 400px;
 }
 .subscription{
@@ -575,12 +594,15 @@ nav ul{
 
 /*PC*/
 @media only screen and (min-width:1240px){
-#intro {
+.intro {
     background-size: cover,250px 615px,contain;
     background-repeat: no-repeat, no-repeat, repeat;
     height: 40rem;
 }
 .year{
   display: inline;
+}
+.carousel-cell{
+    width: 25%;
 }
 }
