@@ -116,6 +116,10 @@ body {
 }
 a {
   text-decoration: none;
+  color: #e2574c;
+}
+a:hover{
+  color: #b64036;
 }
 h1, h2{
   margin:0;
@@ -149,6 +153,7 @@ p{
   margin:0 auto;
   padding-bottom:3rem;
   font-size: 1.15rem;
+  font-weight: lighter;
 }
 span {
   font-weight: bold;
@@ -221,6 +226,7 @@ li{
 .menuwrapper{
   order:3;
   width: 100%;
+  color:#e2574c;
 }
 nav ul {
    display: flex;
@@ -234,7 +240,6 @@ nav ul {
 }
 .menu_item a{
    font-size: 0.8rem;
-   color:#e2574c;
    text-transform: uppercase;
    font-family: "Raleway";
  }
@@ -266,6 +271,15 @@ nav ul {
   font-weight: 400;
 }
 /*SHOP*/
+.about > .text-wrapp{
+  padding: 0 2%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.about p{
+  line-height: 2rem;
+}
+/*I have no idea why the code below is working, why there is .category-container and category-container div???*/
 .category-container{
   display: flex;
   flex-wrap:wrap;
@@ -281,35 +295,30 @@ nav ul {
 .men{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/mens-category.jpg");
   background-size: cover;
-  /* grid-area: men; */
   flex:2 0 100%;
   width: 100%;
 }
 .trends{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/trends-category.jpg");
   background-size: cover;
-  /* grid-area: trends; */
   flex:1 0 50%;
   width: 50%;
 }
 .glasses{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/glasses-category.jpg");
   background-size: cover;
-  /* grid-area: glasses; */
   flex:1 0 50%;
   width: 50%
 }
 .sale{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/sale-category.jpg");
     background-size: cover;
-    /* grid-area: sale; */
     flex:1 0 50%;
     width:50%;
 }
 .bags{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/bags-category.jpg");
   background-size: cover;
-  /* grid-area: bags; */
   flex:1 0 50%;
   width: 50%;
 }
@@ -317,7 +326,6 @@ nav ul {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
    url("../images/womens-category.jpg");
   background-size: cover;
-  /* grid-area: women; */
   flex:2 0 100%;
   width: 100%;
 
@@ -332,22 +340,18 @@ nav ul {
 .glasses.square, .bags.square{
   border-right: 0;
 }
-.featured-text{
+.shop-text{
   color: #fff;
   font-family: 'Raleway',sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  /* height: auto;
-  left: 50%;
-  line-height: 1;
-  position: absolute; */
   text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
   text-transform: uppercase;
 }
-.featured-text a{
+.shop-text a{
   color:#fff;
 }
-.featured-text a:hover{
+.shop-text a:hover{
   color:#b64036;
 }
 /*SLIDER-*/
@@ -356,9 +360,12 @@ h4{
   margin-bottom: .75rem;
   text-transform: uppercase;
 }
+.slider{
+  height: 800px;
+}
 .store-category, .category-price{
   color: #969696;
-  font-weight: 700;
+  font-weight: lighter;
 }
 .category-text{
   color: #e2574c;
@@ -462,16 +469,23 @@ footer{
   text-align: center;
   font-weight: lighter;
 }
-.social-text a{
+.social-text p{
   color: #ffff;
+  font-family: 'Raleway',serif;
 }
 footer p{
   padding: 0 0 15px 0;
-  font-family: 'Playfair Display','serif';
+  font-family: 'Playfair Display',serif;
 }
 .social-text p{
   display: none;
 }
+footer a {
+  color: white;
+}
+/* a :hover{
+  color: #b64036;
+} */
 /*MEDIA QUERIES*/
 /*TABLET*/
 @media only screen and (min-width: 600px){
@@ -504,42 +518,34 @@ nav ul{
     border: none;
   }
 /*SHOP*/
-.text-wrapp-feautered{
-    max-width: 720px;
-    padding: 0 2% 4rem;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .category-container{
-    height: 100vh;
-  }
-  .men.wide{
-    border-left: 0;
-    border-right: 4px solid #fff;
-    flex-basis: 50%;
-  }
-  .women.wide{
-    border-right: 0;
-    border-left: 4px solid #fff;
-    flex-basis: 50%;
-  }
-  .trends.squre{
-    border-left: 4px solid #fff;
-  }
-  .square{
-    flex-basis: 25%;
-  }
-  /*SLIDER*/
-  .carusel{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-  }
-  /*NEWSLETTER--*/
+.category-container{
+  height: 100vh;
+}
+.men.wide{
+  border-left: 0;
+  border-right: 4px solid #fff;
+  flex-basis: 50%;
+}
+.women.wide{
+  border-right: 0;
+  border-left: 4px solid #fff;
+  flex-basis: 50%;
+}
+.trends.squre{
+  border-left: 4px solid #fff;
+}
+.square{
+  flex-basis: 25%;
+}
 /*SLIDER*/
+.carusel{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
 .carousel-cell{
-    width: 50%;
+  width: 50%;
 }
 /*NEWSLETTER*/
 .newsletter{
@@ -577,7 +583,6 @@ nav ul{
     text-align: left;
   }
 }
-
 /*PC*/
 @media only screen and (min-width:1240px){
 .intro {
