@@ -474,6 +474,9 @@ footer{
   color: #ffff;
   font-family: 'Raleway',serif;
 }
+footer a{
+  color: white;
+}
 footer p{
   padding: 0 0 15px 0;
   font-family: 'Playfair Display',serif;
