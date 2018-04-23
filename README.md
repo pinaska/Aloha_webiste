@@ -1,14 +1,13 @@
 # project-01
-this is first project RedAcademy Spring 2018 | Aloha Apparel Co.
+this is the first project RedAcademy Spring 2018 | coding Aloha Apparel Co. based on the mockup
 
 ## features:
 * simple one-page layout: 5 sections, full-width
-* newsletter sign-in form (tbd.)
-* cart (tbd.)
+* basic js and jQuery:
 
 
 ## approach:
-* mobile-first
+* mobile-first, tablet viw, desktop view
 * flexbox
 * responsive images and fonts
 

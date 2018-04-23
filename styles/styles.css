@@ -461,9 +461,10 @@ footer{
 .address{
   color: #969696
 }
-.contact span{
+.contact a{
   text-decoration: underline;
   font-weight: normal;
+  color: #ffff;
 }
 .social-menu{
   text-align: center;
@@ -480,7 +481,7 @@ footer p{
 .social-text p{
   display: none;
 }
-footer a {
+/* footer a {
   color: white;
 }
 /* a :hover{
