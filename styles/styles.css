@@ -409,9 +409,9 @@ h4{
 .newsletter{
   height: 700px;
   background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url(../images/wave-bkgd.jpg) no-repeat bottom;
+  background-size: cover;
   color:#ffff;
   margin-bottom: 8px;
-  /* padding: 4rem 0; */
 }
 .subscription{
   margin: 0 auto;
@@ -484,12 +484,7 @@ footer p{
 .social-text p{
   display: none;
 }
-/* footer a {
-  color: white;
-}
-/* a :hover{
-  color: #b64036;
-} */
+
 /*MEDIA QUERIES*/
 /*TABLET*/
 @media only screen and (min-width: 600px){
@@ -514,7 +509,7 @@ footer p{
   }
 .intro{
     background-size: cover,250px 615px,cover;
-    background-repeat: no-repeat, no-repeat, repeat;/*how to get it repeated nicly?*/
+    background-repeat: no-repeat, no-repeat, repeat;
     height: 40rem;
     margin-top: 50px;
   }
