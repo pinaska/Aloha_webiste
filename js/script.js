@@ -20,16 +20,12 @@ $('form').on('submit', function(event){
 
 //flickity carusel
 $('.main-carousel').flickity({
-  // options
-  // wrapAround:true,
   contain: true,
-  // autoPlay: true, autoPlay messes up with the code
   freeScroll: true
 });
 
 //smooth scrolling src:https://css-tricks.com/snippets/jquery/smooth-scrolling/#article-header-id-1
 $('a[href*="#"]')
-  // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
